@@ -1,34 +1,34 @@
 name: 'CA - Insights'
-multiple: TRUE
+multiple: FALSE
 category: 'Capital Azur'
 enabled: TRUE
-extra_fields:
-  title:
-    type: text
-    label: 'Section Title'
-  description:
-    type: textarea
-    label: 'Section Description'
-  link:
-    type: url_extended
-    label: 'Bottom CTA Link (e.g. "Voir tous les insights")'
 fields:
-  image:
-    type: image
-    label: 'Thumbnail Image'
-    options:
-      '#required': TRUE
-  category:
-    type: text
-    label: 'Category Badge (e.g. ACTUALITÉ)'
-  date:
-    type: text
-    label: 'Date (e.g. 15/01/18)'
   title:
     type: text
-    label: 'Article Title'
+    label: "Titre"
+  description:
+    type: text_format
+    label: 'Description'
+    options:
+      '#format': 'basic_html'
+  collection:
+    type: json_api_collection
+    label: 'JSON:API'
     options:
       '#required': TRUE
+      '#default_value':
+        resource: node--vactory_news
+        filters:
+          - fields[node--vactory_news]=drupal_internal__nid,path,title,field_vactory_news_theme,field_vactory_media,field_vactory_excerpt,field_vactory_date,is_flagged,has_flag
+          - fields[taxonomy_term--vactory_news_theme]=tid,name,term_2_slug
+          - fields[media--image]=name,thumbnail
+          - fields[file--image]=filename,uri
+          - include=field_vactory_news_theme,field_vactory_media,field_vactory_media.thumbnail
+          - filter[status][value]=1
+          - page[offset]=0
+          - page[limit]=3
+          - sort[sort-vactory-date][path]=field_vactory_date
+          - sort[sort-vactory-date][direction]=DESC
   link:
     type: url_extended
-    label: 'Article Link (e.g. LIRE PLUS)'
+    label: 'Lien'
