@@ -13,12 +13,23 @@ fields:
     label: 'Description'
   image:
     type: image
-    label: 'Left Image'
+    label: 'Image'
     options:
       '#required': TRUE
+  image_position:
+    type: select
+    label: 'Image Position'
+    options:
+      '#default_value': 'left'
+      '#options':
+        left: 'Left (text on right)'
+        right: 'Right (text on left)'
   background_color:
     type: text
     label: 'Background Color (hex, e.g. #1a6dd1)'
+  text_color:
+    type: text
+    label: 'Text Color (hex, e.g. #ffffff)'
   link:
     type: url_extended
     label: 'CTA Button (optional)'

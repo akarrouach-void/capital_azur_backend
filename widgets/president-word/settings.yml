@@ -1,0 +1,29 @@
+name: 'CA - President Word'
+multiple: FALSE
+category: 'Capital Azur'
+enabled: TRUE
+fields:
+  image:
+    type: image
+    label: 'Portrait Image'
+    options:
+      '#required': TRUE
+  name:
+    type: text
+    label: 'Name (e.g., Yohan Labah)'
+    options:
+      '#required': TRUE
+  role:
+    type: text
+    label: 'Role (e.g., Président, Capital Azur)'
+  title:
+    type: text
+    label: 'Section Title (e.g., Votre satisfaction, notre passion)'
+    options:
+      '#required': TRUE
+  quote:
+    type: text_format
+    label: 'Quote / Message'
+    options:
+      '#format': 'basic_html'
+      '#required': TRUE

@@ -1,0 +1,33 @@
+name: 'CA - Key Figures'
+multiple: TRUE
+category: 'Capital Azur'
+enabled: TRUE
+extra_fields:
+  title:
+    type: text
+    label: 'Section Title (e.g., La banque en quelques chiffres)'
+    options:
+      '#required': TRUE
+  description:
+    type: textarea
+    label: 'Section Description (optional)'
+  cta_label:
+    type: text
+    label: 'CTA Button Label (e.g., Communication financière 2019)'
+  cta_file:
+    type: file
+    label: 'CTA Downloadable File (optional)'
+  cta_link:
+    type: url_extended
+    label: 'CTA External Link (optional, used if no file)'
+fields:
+  number:
+    type: text
+    label: 'Figure (e.g., 1E, 13, 0,3)'
+    options:
+      '#required': TRUE
+  label:
+    type: textarea
+    label: 'Figure Label (e.g., Banque Digitale en Afrique)'
+    options:
+      '#required': TRUE
