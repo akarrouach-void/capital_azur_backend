@@ -1,0 +1,21 @@
+name: 'CA - Footer'
+multiple: TRUE
+category: 'Capital Azur'
+enabled: TRUE
+fields:
+  cta_social:
+    type: url_extended
+    label: 'Social media link'
+  icon:
+    type: vactory_icon_picker
+    label: 'Icon'
+extra_fields:
+  logo:
+    type: image
+    label: 'Logo'
+  copyrights:
+    type: text
+    label: 'Copyright text'
+  address:
+    type: textarea
+    label: 'Address / tagline (optional)'

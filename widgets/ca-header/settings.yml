@@ -1,0 +1,11 @@
+name: 'CA - Header'
+multiple: FALSE
+category: 'Capital Azur'
+enabled: TRUE
+extra_fields:
+  logo:
+    type: image
+    label: "Logo"
+  cta:
+    type: url_extended
+    label: 'CTA Button (optional)'

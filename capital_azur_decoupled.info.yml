@@ -1,0 +1,7 @@
+name: 'Capital Azur Decoupled'
+description: 'Capital Azur custom dynamic field widgets.'
+type: module
+core_version_requirement: ^9 || ^10
+package: Capital Azur Decoupled
+dependencies:
+  - vactory_starter_kit:vactory_dynamic_field
