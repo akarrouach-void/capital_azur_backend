@@ -1,0 +1,5 @@
+name: 'CA - Page Anchor Navigation'
+description: 'Sticky tab navigation auto-generated from page sections. Set a Paragraph ID and Title on each target section to make it appear as a tab.'
+multiple: false
+category: 'Capital Azur'
+enabled: TRUE
