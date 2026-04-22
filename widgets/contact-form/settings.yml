@@ -1,0 +1,19 @@
+name: 'Contact Form'
+multiple: FALSE
+category: 'Capital Azur'
+enabled: TRUE
+extra_fields:
+  title:
+    type: text
+    label: 'Section Title'
+  description:
+    type: textarea
+    label: 'Section Description'
+fields:
+  webform:
+    type: webform_decoupled
+    label: 'Formulaire'
+    options:
+      '#required': TRUE
+      '#default_value':
+        webform_id: ca_contact_form
